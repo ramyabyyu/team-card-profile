@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Card Glassmorphism and 3D Effect</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+                <img src="./img/1.jpg" alt="" width="150px" height="150px">
+                <div class="profile">
+                    <h3>Someone Famous</h3>
+                    <p>Web Developer</p>
+                </div>
+                <div class="social-media">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+            <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+                <img src="./img/2.jpg" alt="" width="150px" height="150px">
+                <div class="profile">
+                    <h3>Someone Famous</h3>
+                    <p>Web Developer</p>
+                </div>
+                <div class="social-media">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+            <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+                <img src="./img/3.jpg" alt="" width="150px" height="150px">
+                <div class="profile">
+                    <h3>Someone Famous</h3>
+                    <p>Web Developer</p>
+                </div>
+                <div class="social-media">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".card"), {
+            max: 25,
+            speed: 400
+        });
+        
+        //It also supports NodeList
+        VanillaTilt.init(document.querySelectorAll(".card"));
+    </script>
+</body>
+</html>
